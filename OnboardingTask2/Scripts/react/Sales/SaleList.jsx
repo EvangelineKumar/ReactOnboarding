@@ -157,7 +157,7 @@ export default class SaleTable extends Component {
     onUpdateSubmit() {
         if (this.validateForm()) {
             let data = {
-                'Id': this.state.Id,
+                'Id': this.state.updateId,
                 'ProductId': this.state.ProductId,
                 'CustomerId': this.state.CustomerId,
                 'StoreId': this.state.StoreId,
@@ -170,8 +170,8 @@ export default class SaleTable extends Component {
                 data: data,
                 success: function (data) {
                     this.setState({ Success: data })
-                    window.location.reload()
-
+                    window.location.reload()                        
+                    console.log(data)
                 }.bind(this)
             });
         }
