@@ -130,6 +130,9 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\onBoardingReact - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\OnboardingReact - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\onBoardingReact - Web Deploy1.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -165,7 +168,9 @@
     <Content Include="Scripts\react\Stores\StoreList.jsx" />
     <Content Include="Scripts\react\Stores\StoreUpdate.jsx" />
     <Content Include="Scripts\react\webpack.config.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Scripts\react\package-lock.json" />
     <Content Include="Scripts\react\package.json" />
   </ItemGroup>
@@ -200,7 +205,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\web.config" />
+    <Content Include="Views\web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />

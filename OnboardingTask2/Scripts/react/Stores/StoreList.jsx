@@ -48,7 +48,7 @@ export default class StoreTable extends Component {
 
     //Get stores
     loadData() {
-
+        
         $.ajax({
             url: "/Stores/GetStores",
             type: "GET",
